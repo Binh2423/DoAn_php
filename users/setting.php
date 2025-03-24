@@ -1,10 +1,10 @@
 <?php
 session_start();
-include 'config.php'; // Kết nối CSDL
+include '../config/config.php'; // Kết nối CSDL
 
 // Kiểm tra đăng nhập
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
+    header("Location: ../login/login.php");
     exit();
 }
 
@@ -54,10 +54,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include 'config/header.php'; ?>
-<?php include 'config/navbar-top.php'; ?>
-<?php include 'config/navbar-left.php'; ?>
-
+<?php include '../config/header.php'; ?>
+<?php include '../config/navbar-top.php'; ?>
+<?php include '../config/navbar-left.php'; ?>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
 <!-- main content -->
 <div class="main-content bg-lightblue theme-dark-bg right-chat-active">
 
@@ -124,10 +131,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 <!-- main content -->
 
-<?php include 'config/right-chat.php'; ?>
+<?php include '../config/right-chat.php'; ?>
 
-<script src="js/plugin.js"></script>
-<script src="js/scripts.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="../js/scripts.js"></script>
 
 </body>
 </html>
