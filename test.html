@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #18191A;
+            color: white;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #242526;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 20px;
+            background-color: #242526;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .menu a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .menu a:hover {
+            background-color: #3A3B3C;
+        }
+        .settings {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="../images/user.jpg" alt="User Avatar">
+                <h4><?= htmlspecialchars($user['name']) ?></h4>
+            </div>
+            <div class="menu">
+                <a href="#"><i class="fas fa-user"></i> Thông tin cá nhân</a>
+                <a href="#"><i class="fas fa-lock"></i> Bảo mật</a>
+                <a href="#"><i class="fas fa-bell"></i> Thông báo</a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Cài đặt tài khoản</h2>
+            <div class="settings">
+                <p><strong>Họ và tên:</strong> <?= htmlspecialchars($user['name']) ?></p>
+                <p><strong>Email:</strong> <?= htmlspecialchars($user['email']) ?></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
