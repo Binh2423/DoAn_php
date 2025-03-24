@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config/config.php'; // Kết nối database
+include '../config/config.php'; // Kết nối database
 
 if (!$conn) {
     die("Lỗi kết nối cơ sở dữ liệu: " . mysqli_connect_error());
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($stmt->num_rows > 0 && password_verify($password, $password_hash)) {
         $_SESSION['user_id'] = $id;
         $_SESSION['username'] = $name;
-        header("Location: index.php");
+        header("Location: ../index.php");
         exit();
     } else {
         $error = "Email hoặc mật khẩu không đúng!";
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Facebook - Đăng nhập hoặc đăng ký</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="color-theme-blue">
