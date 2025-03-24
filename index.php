@@ -1,7 +1,7 @@
 
-<?php include 'includes/header.php';
-include 'includes/navbar-top.php';
-include 'includes/navbar-left.php';
+<?php include 'config/header.php';
+include 'config/navbar-top.php';
+include 'config/navbar-left.php';
 
 ?>
         <div class="main-content right-chat-active">
