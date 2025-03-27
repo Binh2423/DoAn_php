@@ -1,9 +1,19 @@
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt tài khoản</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 <?php include 'config/header.php';
 include 'config/navbar-top.php';
 include 'config/navbar-left.php';
 
 ?>
+
         <div class="main-content right-chat-active">
             
             <div class="middle-sidebar-bottom">
@@ -244,7 +254,7 @@ include 'config/navbar-left.php';
                                     <figure class="avatar me-3 m-0"><img src="images/avatar_fb_DT.jpg" alt="image" class="shadow-sm rounded-circle w45"></figure>
                                     <h4 class="fw-700 text-grey-900 font-xssss mt-1">Duy Trinh Phan  <span class="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500">2 hour ago</span></h4>
                                     <a href="#" class="ms-auto" id="dropdownMenu6" data-bs-toggle="dropdown" aria-expanded="false"><i class="ti-more-alt text-grey-900 btn-round-md bg-greylight font-xss"></i></a>
-                                    <?php include 'config/action_post.php'; ?>
+                                    <?php include 'includes/action_post.php'; ?>
                                 </div>
                                 <div class="card-body p-0 me-lg-5">
                                     <p class="fw-500 text-grey-500 lh-26 font-xssss w-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus <a href="#" class="fw-600 text-primary ms-2">See more</a></p>
@@ -400,7 +410,7 @@ include 'config/navbar-left.php';
                                     <figure class="avatar me-3"><img src="images/avatar_fb.jpg" alt="image" class="shadow-sm rounded-circle w45"></figure>
                                     <h4 class="fw-700 text-grey-900 font-xssss mt-1">TRƯƠNG NGỌC PHÚ. <span class="d-block font-xssss fw-500 mt-1 lh-3 text-grey-500">10 hour ago</span></h4>
                                     <a href="#" class="ms-auto" id="dropdownMenu5" data-bs-toggle="dropdown" aria-expanded="false"><i class="ti-more-alt text-grey-900 btn-round-md bg-greylight font-xss"></i></a>
-                                    <?php include 'config/action_post.php'; ?>
+                                    <?php include 'includes/action_post.php'; ?>
                                 </div>
                                 <div class="card-body p-0 mb-3 rounded-3 overflow-hidden">
                                     <a href="default-video.html" class="video-btn">
@@ -747,7 +757,7 @@ include 'config/navbar-left.php';
 
         <!-- right chat -->
         
-        <?php include 'config/right-chat.php';?>
+        <?php include 'includes/right-chat.php';?>
 
         
         <!-- right chat -->

@@ -18,6 +18,15 @@ $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc() ?? ['name' => 'Người dùng', 'email' => 'Chưa có email']; // Đảm bảo không bị lỗi
 $stmt->close();
+// Lấy đường dẫn ảnh cũ từ database
+$sql = "SELECT avatar FROM users WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$user = $result->fetch_assoc();
+$old_avatar = $user['avatar'];
+$stmt->close();
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +84,7 @@ $stmt->close();
                                     <li class="list-inline-item d-block border-bottom me-0"><a href="help.php" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-md bg-primary-gradiant text-white feather-help-circle font-md me-3"></i>
                                             <h4 class="fw-600 font-xsss mb-0 mt-0">Hỗ trợ</h4><i class="ti-angle-right font-xsss text-grey-500 ms-auto mt-3"></i>
                                         </a></li>
-                                    <li class="list-inline-item d-block me-0"><a href="#" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-md bg-red-gradiant text-white feather-lock font-md me-3"></i>
+                                    <li class="list-inline-item d-block me-0"><a href="../login/login.php" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-md bg-red-gradiant text-white feather-lock font-md me-3"></i>
                                             <h4 class="fw-600 font-xsss mb-0 mt-0">Đăng xuất</h4><i class="ti-angle-right font-xsss text-grey-500 ms-auto mt-3"></i>
                                         </a></li>
 

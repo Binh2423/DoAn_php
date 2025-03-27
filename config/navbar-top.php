@@ -1,10 +1,11 @@
+
 <body class="color-theme-blue mont-font">
     <div class="preloader"></div>
     <div class="main-wrapper">
         <div class="nav-header bg-white shadow-xs border-0">
             <div class="nav-top">
-                <a href="index.php">
-                    <img class="" style="width: 64px;" src="/images/chillspace.png">
+                <a href="../index.php">
+                    <img class="" style="width: 64px;" src="../images/chillspace.png">
                     <!-- <i class="feather-zap text-success display1-size me-2 ms-0"></i> -->
                     <span class="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">chillspace</span>
                 </a>
@@ -143,7 +144,7 @@
             </div>
 
 
-            <a href="account.php" class="p-0 ms-3 menu-icon"><img src="images/profile-4.png" alt="user" class="w40 mt--1"></a>
+            <a href="account.php" class="p-0 ms-3 menu-icon"><img src="../images/<?= $user['avatar'] ? $user['avatar'] : 'default-avatar.jpg' ?>" class="w40 mt--1"></a>
 
         </div>
     

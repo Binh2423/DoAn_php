@@ -35,7 +35,7 @@
                     <ul class="list-group list-group-flush">
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">TRƯƠNG NGỌC PHÚ.</a>
@@ -44,7 +44,7 @@
                         </li>
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb_DH.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb_DH.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">Đăng Huy </a>
@@ -53,7 +53,7 @@
                         </li>
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb_DQ.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb_DQ.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">Nguyễn PD Quỳnh</a>
@@ -62,7 +62,7 @@
                         </li>
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb_DN.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb_DN.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">Trần Nguyễn Daenel</a>
@@ -80,7 +80,7 @@
                         </li> -->
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb_TN.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb_TN.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">Dương Trọng Nghĩa</a>
@@ -89,7 +89,7 @@
                         </li>
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb_TB.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb_TB.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">Kiều Nguyễn Thanh Bình</a>
@@ -98,7 +98,7 @@
                         </li>
                         <li class="bg-transparent list-group-item no-icon pe-0 ps-0 pt-2 pb-2 border-0 d-flex align-items-center">
                             <figure class="avatar float-left mb-0 me-2">
-                                <img src="images/avatar_fb_LV.jpg" alt="image" class="shadow-sm rounded-circle w35">
+                                <img src="../images/avatar_fb_LV.jpg" alt="image" class="shadow-sm rounded-circle w35">
                             </figure>
                             <h3 class="fw-700 mb-0 mt-0">
                                 <a class="font-xssss text-grey-600 d-block text-dark model-popup-chat" href="#">Lương Vĩ</a>
