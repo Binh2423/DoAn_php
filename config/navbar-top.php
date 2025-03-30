@@ -1,4 +1,3 @@
-
 <body class="color-theme-blue mont-font">
     <div class="preloader"></div>
     <div class="main-wrapper">
@@ -144,7 +143,6 @@
             </div>
 
 
-            <a href="account.php" class="p-0 ms-3 menu-icon"><img src="../images/<?= $user['avatar'] ? $user['avatar'] : 'default-avatar.jpg' ?>" class="w40 mt--1"></a>
+            <a href="../users/account.php" class="p-0 ms-3 menu-icon"><img src="../images/<?= $user['avatar'] ? $user['avatar'] : 'default.png' ?>" class="w40 mt--1"></a>
 
         </div>
-    
