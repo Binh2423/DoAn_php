@@ -7,26 +7,29 @@ if (!$conn) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $email = trim($_POST['email']);
+    $loginInput = trim($_POST['email']); // Có thể là email hoặc số điện thoại
     $password = trim($_POST['password']);
 
-    // Kiểm tra thông tin đăng nhập
-    $stmt = $conn->prepare("SELECT id, name, password_hash FROM users WHERE email = ? LIMIT 1");
-    $stmt->bind_param("s", $email);
+    // Kiểm tra thông tin đăng nhập bằng email hoặc số điện thoại
+    $stmt = $conn->prepare("SELECT id, name, password_hash FROM users WHERE email = ? OR phone = ? LIMIT 1");
+    $stmt->bind_param("ss", $loginInput, $loginInput);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($id, $name, $password_hash);
     $stmt->fetch();
+
     if ($stmt->num_rows > 0 && password_verify($password, $password_hash)) {
         $_SESSION['user_id'] = $id;
         $_SESSION['username'] = $name;
         header("Location: ../post/index.php");
         exit();
     } else {
-        $error = "Email hoặc mật khẩu không đúng!";
+        $error = "Email, số điện thoại hoặc mật khẩu không đúng!";
     }
+
     $stmt->close();
 }
+
 ?>
 
 <!DOCTYPE html>

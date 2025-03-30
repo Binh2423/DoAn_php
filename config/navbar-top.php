@@ -32,7 +32,7 @@
                 <h4 class="fw-700 font-xss mb-4">Thông báo</h4>
                 <!-- Viết vòng for dô đây để lấy thông báo -->
                 <div class="card bg-transparent-card w-100 border-0 ps-5 mb-3">
-                    <img src="images/user-8.png" alt="user" class="w40 position-absolute left-0">
+                    <img src="../images/user-8.png" alt="user" class="w40 position-absolute left-0">
                     <h5 class="font-xsss text-grey-900 mb-1 mt-0 fw-700 d-block">{{Username}} <span class="text-grey-400 font-xsssss fw-600 float-right mt-1"> {{Time}}</span></h5>
                     <h6 class="text-grey-500 fw-500 font-xssss lh-4">{{Message}}</h6>
                 </div>
@@ -143,6 +143,6 @@
             </div>
 
 
-            <a href="../users/account.php" class="p-0 ms-3 menu-icon"><img src="../images/<?= $user['avatar'] ? $user['avatar'] : 'default.png' ?>" class="w40 mt--1"></a>
+            <a href="../users/account.php" class="p-0 ms-3 menu-icon"><img src="../images/<?= $user['avatar'] ? $user['avatar'] : '../iamges/default.png' ?>" class="w40 mt--1"></a>
 
         </div>
