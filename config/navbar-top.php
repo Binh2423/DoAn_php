@@ -3,7 +3,7 @@
     <div class="main-wrapper">
         <div class="nav-header bg-white shadow-xs border-0">
             <div class="nav-top">
-                <a href="../index.php">
+                <a href="../post/index.php">
                     <img class="" style="width: 64px;" src="../images/chillspace.png">
                     <!-- <i class="feather-zap text-success display1-size me-2 ms-0"></i> -->
                     <span class="d-inline-block fredoka-font ls-3 fw-600 text-current font-xxl logo-text mb-0">chillspace</span>
@@ -21,7 +21,7 @@
                 </div>
             </form>
             <a href="index.php" class="p-2 text-center ms-3 menu-icon center-menu-icon"><i class="feather-home font-lg alert-primary btn-round-lg theme-dark-bg text-current "></i></a>
-            <a href="storie.php" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-zap font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
+            <a href="../chat_mes/chat.php" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-zap font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
             <a href="video.php" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-video font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
             <a href="group.php" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-user font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
             <a href="shop-2.php" class="p-2 text-center ms-0 menu-icon center-menu-icon"><i class="feather-shopping-bag font-lg bg-greylight btn-round-lg theme-dark-bg text-grey-500 "></i></a>
@@ -38,7 +38,7 @@
                 </div>
 
             </div>
-            <a href="#" class="p-2 text-center ms-3 menu-icon chat-active-btn"><i class="feather-message-square font-xl text-current"></i></a>
+            <a href="../chat_mes/chat.php" class="p-2 text-center ms-3 menu-icon chat-active-btn"><i class="feather-message-square font-xl text-current"></i></a>
             <div class="p-2 text-center ms-3 position-relative dropdown-menu-icon menu-icon cursor-pointer">
                 <i class="feather-settings animation-spin d-inline-block font-xl text-current"></i>
                 <div class="dropdown-menu-settings switchcolor-wrap">

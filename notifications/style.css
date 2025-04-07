@@ -1,0 +1,44 @@
+/* Styles for the Notification Modal */
+#notificationsModal {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.modal-header {
+    background-color: #4267B2;
+    color: white;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-item:hover {
+    background-color: #f0f2f5;
+    cursor: pointer;
+}
+
+.notification-item .notification-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.notification-item .notification-date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}

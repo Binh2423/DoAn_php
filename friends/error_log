@@ -1,0 +1,4 @@
+[30-Mar-2025 03:02:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home/mxnhcsinhthanh/demo4.thebao.vip/friends/list.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/mxnhcsinhthanh/demo4.thebao.vip/friends/list.php on line 25
